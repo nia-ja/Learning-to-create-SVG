@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First SVG</title>
+</head>
+<body>
+    <!-- All content inside svg tags is for browser an svg, not html, we also should define width and height of our svg (of a whole block!) -->
+    <svg width="250" height="250">
+
+        <rect rx="50" ry="50" x="5" y="5" width="240" height="240" fill="rgba(128, 186, 146, .8)" stroke="green" stroke-width="10"/>
+
+        <!-- You can also use opening/closing tags, but it's normally nothing inside, all goes in attributes, so we can use self-closing tags instead -->
+        <!-- r ( = radius), cx ( = center on x-axis), cy ( = center on y-axis), fill ( = background color; if not fill="none" or fill="your_color_here" => defult = black), stroke ( = border) -->
+        <circle r="105" cx="125" cy="125" fill="rgba(244, 194, 66, .8)" stroke="rgb(234, 157, 2)" stroke-width="10"/>
+
+        <polygon fill="pink" points="45,55 100,25 150,25 205,55 205,205" />
+
+        <circle r="40" cx="125" cy="125" fill="rgb(1, 164, 234)" stroke="rgb(4, 99, 140)" stroke-width="5"/>
+
+        <!-- for rectangle instead of the center we're defining where top left is -->
+        <!-- x ( = start on the x-axis), y ( = start on y-axis), rx ( = radius of the corner on the x-axis), ry ( = radius of the corner on the y-axis) -->
+        <!-- if we want it in the back, we should put it as the first thing after the opening svg tag. First is behind, last is on top -->
+        <!-- <rect rx="30" ry="30" x="0" y="0" width="250" height="250" fill="rgb(128, 186, 146)" stroke="green" stroke-width="10"/> -->
+
+        <!-- x1 and y1 - starting point of the line, x2 and y2 - where the line ends -->
+        <line x1="0" y1="0" x2="250" y2="250" stroke="rgb(160, 69, 46)" stroke-width="25" />
+    </svg>
+
+    <br />
+
+    <!-- <svg width="140" height="170">
+        <circle cx="70" c  />
+
+    </svg> -->
+
+</body>
+</html>
